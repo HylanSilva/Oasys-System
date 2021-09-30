@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-        Devolução | Oasys
-        </title>
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+    <title>
+        Devolucao | Oasys
+    </title>
+    <link rel="stylesheet" href="css/devlivstyle.css">
+    <script type="text/javascript" src="/js/script.js"></script>
+</head>
+
+<body>
+    <div class="book-view">
+        <div class="book-image">
+
+        </div>
+        <div class="book-data">
+            <ul>
+                <li id="book-name"></li>
+                <li id="book-author"></li>
+                <li id="book-editor"></li>
+                <li id="book-type"></li>
+                <li id="book-long"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bar-code">
+        <p id="text-bar-code">Digite aqui o código do livro:</p>
+        <p id="bar-code-view"> </p>
+        <!--        <button id="btn-cancel">X</button> -->
+        <button id="btn-limp" onclick="clean()">Limpar</button>
+        <div class="buttons">
+            <button id="btn-voltar" type="submit"><a href="index.html">VOLTAR</a></button>
+            <button id="btn-devolver" type="submit"><a href="devliv.html">DEVOLVER</a></button>
+        </div>
+    </div>
+    <div class="keyboard">
+        <table>
+            <tr>
+                <td><button id="btn-1" onclick="insert('1')">1</button></td>
+                <td><button id="btn-2" onclick="insert('2')">2</button></td>
+                <td><button id="btn-3" onclick="insert('3')">3</button></td>
+                <td><button id="btn-4" onclick="insert('4')">4</button></td>
+                <td><button id="btn-bksp" onclick="apagar()">Apagar</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="btn-5" onclick="insert('5')">5</button></td>
+                <td><button id="btn-6" onclick="insert('6')">6</button></td>
+                <td><button id="btn-7" onclick="insert('7')">7</button></td>
+                <td><button id="btn-8" onclick="insert('8')">8</button></td>
+                <td><button id="btn-enter">Pesquisar</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn-9" onclick="insert('9')">9</button></td>
+                <td><button id="btn-0" onclick="insert('0')">0</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="location">
+        <div class="location-frame">
+            <p id="location-row"> Estante:</p>
+            <div class="color-row">
+
+            </div>
+            <p id="location-line"> Prateleira:</p>
+            <div class="leter-line">
+
+            </div>
+            <p id="location-numb"> Número:</p>
+            <div class="numb-loc">
+
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
+<!-- -->

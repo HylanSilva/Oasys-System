@@ -1,0 +1,49 @@
+.main{
+    width: 1024px;
+    height: 600px;
+    background-color:#E5E5E5;
+}
+
+.btn-back{
+    position: absolute;
+width: 120px;
+height: 34px;
+left: 34px;
+top: 89px;
+
+}
+
+.btn-surprise{
+    position: absolute;
+width: 120px;
+height: 34px;
+left: 34px;
+top: 135px;
+}
+
+.image-roder{
+    
+position: absolute;
+width: 664px;
+height: 160px;
+left: 180px;
+top: 26px;
+background-color:#E1E1E1;
+}
+
+#DSLabz{
+    position: absolute;
+width: 150px;
+height: 70px;
+left: 854px;
+top: 26px;
+
+}
+
+#etemb{
+    position: absolute;
+width: 150px;
+height: 70px;
+left: 854px;
+top: 106px;
+}

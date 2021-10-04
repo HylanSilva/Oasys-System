@@ -12,8 +12,16 @@ body{
     height: 600px;
     position: absolute;
 
-    
 }
+
+.book-image img{
+ position: absolute;
+ width:180px;
+ height:242px;
+ top: 0px;
+ left: 0px;   
+}
+
 .book-image{
     background-color: white;
     width:180px;
@@ -30,6 +38,12 @@ body{
 .book-data{
     display: flex;
     align-items: center;
+}
+
+.book-data ul li p{
+    margin: 2%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
 }
 
 .book-data ul li{
@@ -678,4 +692,18 @@ border-top-left-radius: 25px;
     sans-serif;
     font-weight: bold;
     font-size: 30px;
+}
+
+#leter{
+    margin-top: 1%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#number{
+    margin-top: 1%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }

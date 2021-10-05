@@ -1,19 +1,17 @@
 body{
-    margin: 0px;
-    width: 1024px;
-    height: 528px;
+    width: 1005px;
+    height: 600px;
 }
 
 .main-page{    
     display: flex;
 }
 .background-image{
-    display: flex;
-    position: absolute;
-    margin: 0px;
-    position: absolute;
-    left:0px;
     top: 0px;
+    left: 0px;
+    right: 1024px;
+    bottom: 530px;
+    position: absolute;
     height: 530px;
     width: 1024px;
         }

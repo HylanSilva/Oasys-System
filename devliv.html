@@ -6,27 +6,57 @@
         Devolucao | Oasys
     </title>
     <link rel="stylesheet" href="css/devlivstyle.css">
-    <script type="text/javascript" src="/js/script.js"></script>
+    <script>function insert(num) {
+            var numero = document.getElementById('bar-code-view').innerHTML;
+            document.getElementById('bar-code-view').innerHTML = numero + num;
+        }
+        function clean() {
+            document.getElementById('bar-code-view').innerHTML = "";
+        }
+        function apagar() {
+            var barcode = document.getElementById('bar-code-view').innerHTML;
+            document.getElementById('bar-code-view').innerHTML = barcode.substring(0, barcode.length - 1)
+        }
+
+        let input = document.querySelector("#bar-code-view");
+        let button = document.querySelector("#btn-devolver");
+        button.disabled = true;
+        input.addEventListener("change", stateHandle);
+        function stateHandle() {
+            if (document.querySelector("#bar-code-view").value === "") {
+                button.disabled = true;
+            } else {
+                button.disabled = false;
+            }
+        }</script>
 </head>
 
 <body>
     <div class="book-view">
         <div class="book-image">
-            <img id="livro-posto" src="images/livros/0000001.jpg" alt="foto do livro posto" >
+            <img id="livro-posto" src="images/livros/0000001.jpg" alt="foto do livro posto">
         </div>
         <div class="book-data">
             <ul>
-                <li id="book-name"> <p>O bem amado</p></li>
-                <li id="book-author"><p>Dias Gomes</p></li>
-                <li id="book-editor"><p>Bertrand Brasil</p></li>
-                <li id="book-type"><p>Romance</p></li>
-              <!--  <li id="book-long"><p></p></li> -->
+                <li id="book-name">
+                    <p>O bem amado</p>
+                </li>
+                <li id="book-author">
+                    <p>Dias Gomes</p>
+                </li>
+                <li id="book-editor">
+                    <p>Bertrand Brasil</p>
+                </li>
+                <li id="book-type">
+                    <p>Romance</p>
+                </li>
+                <!--  <li id="book-long"><p></p></li> -->
             </ul>
         </div>
     </div>
     <div class="bar-code">
         <p id="text-bar-code">Digite aqui o código do livro:</p>
-        <p id="bar-code-view" > </p>
+        <p id="bar-code-view"> </p>
         <!--        <button id="btn-cancel">X</button> -->
         <button id="btn-limp" onclick="clean()">Limpar</button>
         <div class="buttons">

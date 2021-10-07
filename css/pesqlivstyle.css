@@ -1,4 +1,5 @@
 .main{
+    position: relative;
     width: 1024px;
     height: 600px;
     background-color:#E5E5E5;

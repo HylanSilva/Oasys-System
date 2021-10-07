@@ -1,4 +1,5 @@
 body{
+    position: relative;
     width: 1024px;
     height: 600px;
 }
@@ -9,7 +10,7 @@ body{
 .background-image{
     top: 0px;
     left: 0px;
-    right: 1005px;
+    right: 1024px;
     bottom: 530px;
     position: absolute;
     height: 530px;
@@ -27,12 +28,11 @@ body{
 }
 
 #ds_labz{
-    margin: 0px;
-  position: absolute;
-  left:775px;
-  top: 556px;
-  height: 70px;
-  width: 150px;
+    position: absolute;
+width: 151px;
+height: 70px;
+left: 702px;
+top: 530px;
   -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
@@ -40,10 +40,10 @@ body{
 
 #etemb{
     position: absolute;
-    left:625px;
-    top: 566px;
-    height: 70px;
-    width: 120px;
+width: 120px;
+height: 73px;
+left: 870px;
+top: 530px;
     -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
